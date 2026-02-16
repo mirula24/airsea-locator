@@ -92,7 +92,7 @@ export default function Home() {
   useEffect(() => {
     // Coba beberapa port WebSocket umum
     const connectToBroker = () => {
-      const client = mqtt.connect('ws://128.199.209.239:9001', {
+      const client = mqtt.connect('wss://128.199.209.239/mqtt', {
         connectTimeout: 5000,
         reconnectPeriod: 5000,
       });
